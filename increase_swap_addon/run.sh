@@ -65,7 +65,7 @@ else
     swapoff "${TEMP_SWAP_FILE}"
     rm -f "${TEMP_SWAP_FILE}"
     print_date "Temporary swap file removed."
-  elif [[ ! $(cat /proc/swaps | grep _swap.swap) ]]; then
+  elif ! grep -q "_swap.swap" /proc/swaps; then
     print_date "Swap file: ${SWAP_FILE} exists but not enabled. Enabling swap file..."
     swapon "${SWAP_FILE}"
     print_date "Existing swap file: ${SWAP_FILE} enabled."
