@@ -5,10 +5,10 @@ You can configure the size and location of the swap file via the Home Assistant 
 
 ## Installation
 
-1. Navigate to the Supervisor panel in your Home Assistant instance.
-2. Click on the "Add-on store" tab.
-3. Add the repository URL for this add-on.
-4. Install the "Increase Swap" add-on.
+To install this add-on, manually add my HA-Addons repository to Home Assistant
+using [this GitHub repository][ha-addon] or by clicking the button below.
+
+[![Add Repository to HA][my-ha-badge]][my-ha-url]
 
 ## Configuration
 
@@ -26,3 +26,7 @@ You can check the add-on logs to confirm that the process has completed successf
 ## Credits
 
 Thanks to JZhass for the [tip](https://community.home-assistant.io/t/how-to-increase-the-swap-file-size-on-home-assistant-os/272226)!
+
+[ha-addon]: https://github.com/roteRakete66/increase_swap_addon-armv7
+[my-ha-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
+[my-ha-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FroteRakete66%2Fincrease_swap_addon-armv7
